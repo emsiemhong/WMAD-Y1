@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Interactive Card</title>
+  <style>
+    .card {
+      width: 200px;
+      height: 300px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+      text-align: center;
+      transition: transform 0.5s;
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      background-color: #f0f0f0;
+    }
+
+    .flipped {
+      transform: rotateY(180deg);
+    }
+
+    .form-control {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card" id="my-card">
+    <div class="card-front">
+      <h2>Interactive Card</h2>
+      <p>Click me to flip</p>
+    </div>
+    <div class="card-back">
+      <h2>Card Back</h2>
+      <form id="card-form">
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+          <span id="name-error"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // 1. Add click event to flip the card
+
+    // 2. Add a hover effect to change border color
+
+    // 3. Validate the name input (must be at least 3 characters)
+
+    // 4. Prevent form submission if validation fails
+
+  </script>
+</body>
+
+</html>
