@@ -6,8 +6,7 @@
 </head>
 
 <body>
-  <h1 id="main-title">DOM Selection Challenge</h1>
-
+  <h1 id="main-title" class="title">DOM Selection Challenge</h1>
   <div class="container">
     <p class="text">This is paragraph 1</p>
     <p class="text">This is paragraph 2</p>
@@ -26,9 +25,15 @@
     // Selection challenges to complete:
 
     // 1. Select the main title by ID and log it
-
+      const mainTitle = document.getElementById("main-title");
+      console.log(mainTitle);
     // 2. Select all paragraphs with class "text" and log them
-
+      const allTexts = document.getElementsByClassName("text");
+      for (let i = 0; i < allTexts.length; i++) {
+        allTexts[i].style.color = "yellow";
+        allTexts[i].style.background = "blue";
+        allTexts[i].style.padding = "30px";
+      }
     // 3. Select the first list item using querySelector
 
     // 4. Select the button and log its text content
